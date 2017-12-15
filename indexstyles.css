@@ -1,0 +1,57 @@
+body{
+  background-image: url("FOND.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+}
+#logoimg{
+  /*margin-top: 300px;*/
+  text-align: center;
+  margin-top: 8%;
+  margin-bottom: 20px;
+}
+
+button{
+  background-color: transparent;
+  border: transparent;
+  opacity: 0.8;
+}
+#enter{
+    margin-top: 60px;
+    font-family: "Arial";
+    color:white;
+    margin-bottom: 60px;
+}
+
+
+#ban{
+  background-color: black;
+  height: 60px;
+  opacity:0.3;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+}
+#welcometxt{
+  color: white;
+  font-family: "Arial";
+  margin-left: 25px;
+
+}
+button:active,
+button:focus,
+button.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}

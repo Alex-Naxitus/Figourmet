@@ -1,0 +1,48 @@
+body{
+  background-color: #1a1a1a;
+}
+#imgtec{
+  text-align: center;
+  margin-bottom: 15%;
+  opacity: 0.7;
+  position: absolute;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+#txt1{
+  color:white;
+  margin-top: 200px;
+  margin-left: 350px;
+}
+#txt2{
+  color:white;
+  margin-top: 60px;
+  margin-left: 820px;
+}
+#txt3{
+  color:white;
+  margin-top: 100px;
+  margin-left: 300px;
+}
+#txt4{
+  color:white;
+  margin-top: 120px;
+  margin-left: 660px;
+}
+#linkback{
+  color:#d7dac3;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+img{
+  background-image: url("creditsimg.png");
+}
+img:hover{
+  background-image: url("ecelogo.png");
+}
+#bout{
+  background-image: url('creditsimg.png');
+}
+#bout:hover{
+  background-image: url('ecelogo.png');
+}

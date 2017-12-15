@@ -1,0 +1,149 @@
+
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(48.869456, 2.300849),
+    zoom:17,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<html>
+<head>
+    <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="contactstyle.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<title>FIGOURMET-Contact</title>
+    <link rel="icon" href="logo.png" />
+</head>
+
+<body>
+
+  <header class = "beginpage">
+    <ul class="topnav" id="myTopnav">
+      <li><button class="button2" onclick="location.href = 'main.html';"><img src="logowhite.png" alt="figourmet" style="width:35px"></button></li>
+  <li><button class="button" onclick="location.href = 'menu.html';">Our menu</button></li>
+  <div class = "dropdown"><li><button class="button" onclick="location.href = 'recettes.html';">Recipes</button></li>
+  <div class="dropdown-content">
+  <a href="recettes.html#Recette1">Mille-feuille</a>
+  <a href="recettes.html#Recette2">Gratin dauphinois</a>
+  <a href="recettes.html#Recette3">Carpaccio</a>
+  </div>
+  </div>
+  <li><button class="button" onclick="location.href = 'offers.html';"> Offers</button></li>
+  <li><button class="button" onclick="location.href = 'contact.html';">Contact</button></li>
+  <div class = "dropdown"><li><button class="buttonrsp" onclick="location.href = 'contact.html';" ><i class="fa fa-bars" aria-hidden="true" id="smlscreenbtn"></i></button></li>
+    <div class="dropdown-content" style="right: 0px; left: auto;">
+      <a href="menu.html">Our menu</a>
+      <a href="recettes.html">Recipes</a>
+      <a href="offers.html">Offers</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+  </ul>
+  </header>
+  <header id = "test">
+
+  </header>
+
+<h1 >Contact us:</h1>
+
+<h3>Address:</h3>
+<p class = "txtctc"><i class="fa fa-map-marker" aria-hidden="true"></i> 35 Avenue George V - 75008 Paris</p>
+<p class = "txtctc"><i class="fa fa-phone" aria-hidden="true"></i> +33 1 49 77 89 22</p>
+<p class = "txtctc"><i class="fa fa-fax" aria-hidden="true"></i> +33 1 53 95 67 13</p>
+
+<h3>Opening hours:</h3>
+
+
+<p class = "txtctc">Monday to Wednesday :  11:30-01:00</p>
+<p class = "txtctc">Thursday to Sunday : 11:30-03:00</p>
+
+<h3>How to Find Us:</h3>
+
+<div id="map"></div>
+<script type="text/javascript">
+
+function initMap() {
+  var myLatLng = {lat: 48.8692933, lng: 2.300675700000056};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 18,
+    center: myLatLng
+  });
+var image = 'logosmlmarker.png';
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    icon:image,
+    title: 'Hello World!'
+  });
+}
+
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEHXWFwwsX6FHMZ7AB4WLdIo9_33snTnM&signed_in=true&callback=initMap"></script>
+
+
+<h3>Fill out our form:</h3>
+<h4>Have a question or a comment?</h4>
+<h4>Fill out your name & email-adress and we'll respond within the business day!</h4>
+
+<form method="post" action="" >
+
+   <fieldset>
+       <legend>Contact Form :</legend>
+
+		<label for="name">First Name :</label>
+		<input type="text" name="first_name" id="first_name" size="30" maxlength="30">
+		<br></br>
+       <label for="last_name">Last Name :</label>
+       <input type="text" name="last_name" id="last_name" size="30" maxlength="30" >
+		<br></br>
+       <label for="email">E-mail :</label>
+       <input type="email" name="email" id="email" size="29" maxlength="29" >
+	   <br></br>
+	   <label for="message">Message :</label><br></br>
+	   <textarea name="message" id="message" rows="8" cols="120"></textarea>
+
+	   <br></br>
+	   <input type="submit" name="submit" value="Submit">
+
+   </fieldset>
+   </form>
+
+   <br></br>
+   <br></br>
+<footer id = "downpage">
+        <p id="foottxt">© COPYRIGHT CORNEC-FORNER-LAUNET-TOURNADE , 2016 - <a href = "credits.html">CREDITS</a></p>
+</footer>
+</body>
+
+</html>
+<?php
+
+if(isset($_POST['submit'])){
+    $to = "alex.cornec@hotmail.fr";
+    $from = $_POST['email'];
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2);
+    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+
+	//heavily inspired by : http://stackoverflow.com/questions/18379238/send-email-with-php-from-html-form-on-submit-with-the-same-script
+    }
+?>
