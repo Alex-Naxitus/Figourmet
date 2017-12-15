@@ -1,0 +1,475 @@
+@charset "UTP-8";
+
+
+#beginpage{
+	height:50px;
+	background-color: rgb(110, 68, 45);
+	/*margin:0px auto;*/
+	/*padding:10px 20px;*/
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1;
+    /*width:100%;*/
+    /*margin-bottom: 50px;*/
+	/*background-image: url("ban1.jpg");*/
+}
+
+
+#test{
+  background-color:  rgb(110, 68, 45);
+  height:30px;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index:1;
+  width: 100%;
+}
+/* Remove margins and padding from the list, and add a black background color */
+#myTopnav{
+  position: fixed;
+    height:168px;
+	 background-color:transparent;
+    top:0;
+    left:0;
+    z-index:2;
+    width: 100%;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(110, 68, 45);
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: rgb(110, 68, 45);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media only screen and (max-width : 1240px) {
+  #test{
+    position:fixed;
+    background-color: rgb(148, 91, 60);
+  }
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  ul.topnav .button {display: none;}
+  .buttonrsp{display:inline-block;}
+
+}
+
+.buttonrsp{
+    z-index: 1;
+    color:#A9A9A9;
+    text-align: right;
+    background-color: transparent;
+    border-color: transparent;
+    margin-right: 0px;
+
+}
+
+
+.button{
+	margin-top: 0px;
+	background-color: transparent;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	border-radius: 2px;
+	color: #A9A9A9;
+	width: 285px;
+  height:40px
+	line-height:60px;
+	font-family: "Arial Black";
+	font-size: 12px;
+	border: 0px;
+}
+.button2{
+  margin-left: 0;
+	margin-top: -10px;
+	background-color: transparent;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	color: #A9A9A9;
+	width: 100px;
+	line-height:60px;
+	font-family: "Arial Black";
+	border:#A9A9A9;
+
+}
+
+.button:hover{
+	color:black;
+  cursor: pointer;
+  color:rgb(255, 249, 228);
+}
+.button2:hover{
+  cursor:pointer;
+}
+.button:active,
+.button:focus,
+.button.active, .button2:active, .button2:focus, .button2.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+    height: auto !important;
+    overflow: visible !important;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  margin-top: 20px;
+    display: none;
+    position: absolute;
+    background-color: rgb(110, 68, 45);
+    min-width: 100px;
+    max-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    height: auto !important;
+    overflow: visible !important;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #A9A9A9;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: "Arial Black";
+    font-size: 10px;
+
+
+}
+
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {color:rgb(255, 249, 228)}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+ul#menu li{
+	display:inline-block;
+	float:right;
+}
+ul#menu{
+	list-style-type: none;
+}
+li.button{
+	float:center;
+}
+/*ul#menu li{
+	display:inline-block;
+	float:right;
+}
+ul#menu{
+	list-style-type: none;
+}*/
+li.button{
+	float:center;
+}
+
+#formules li
+{
+	display: inline;
+	margin-right: 40px;
+	background: rgb(110, 68, 45);
+	opacity: 0.9;
+	color: #A9A9A9;
+	box-shadow: 3px 3px 3px grey;
+	border-radius: 20px 20px 20px 20px;
+	font-size: 30px;
+	padding: 10px;
+}
+
+table
+{
+	border-collapse:collapse;
+}
+
+@font-face {
+    font-family: moonfont;
+    src: url(Moon-Flower-Bold.ttf);
+}
+
+h1
+{
+	font-family: moonfont;
+	font-size: 90px;
+	color: rgb(255, 249, 228);
+	background-image:url(Photos/resto_0.jpg);
+	background-attachment:fixed;
+	padding: 5%;
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-top: 0%;
+
+}
+
+body
+{
+	background-color:  rgb(255, 249, 228);
+	text-align: center;
+}
+
+#body
+{
+		margin-left: 5%;
+		margin-right: 5%;
+}
+
+h2
+{
+	font-family: moonfont;
+	font-size: 50px ;
+	color: rgb(158, 105, 78);
+}
+
+h3
+{
+	font-family: moonfont;
+	color: rgb(158, 105, 78);
+	font-size: 30px;
+	font-weight: bold;
+
+}
+
+h4
+{
+	font-family: verdana;
+	color: rgb(158, 105, 78);
+	font-size: 15px;
+}
+
+/*ul
+{
+	padding: 0.5%;
+	color: rgb(187, 162, 143);
+	font-family: Verdana;
+	font-weight:bold;
+	list-style-type:none;
+}*/
+
+.entry, .dishes, .side, .dessert
+{
+	padding: 0.5%;
+	color: rgb(187, 162, 143);
+	font-family: Verdana;
+	font-weight:bold;
+	list-style-type:none;
+}
+
+.soft, .beer, .whisky, .apero, .digestif, .wine
+{
+	padding: 0.5%;
+	color: rgb(187, 162, 143);
+	font-family: Verdana;
+	font-weight:normal;
+	list-style-type:none;
+}
+
+em
+{
+	font-size: 10px;
+	font-weight: normal;
+}
+
+strong
+{
+	font-weight: normal;
+	color: rgb(158, 105, 78);
+	font-style: italic;
+}
+
+.img_1, .img_2, .img_3
+{
+	display: inline-block;
+	height:120px;
+	width:120px;
+	padding: 0px;
+	margin-right: 0%;
+	margin-left: 0%;
+	border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.img_4
+{
+	display: inline-block;
+	height: 90px;
+	width: 90px;
+	padding: 0px;
+	margin-right: 0%;
+	margin-left: 0%;
+	 border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover, #myImg_1:hover, #myImg_2:hover, #myImg_3:hover, #myImg_4:hover, #myImg_5:hover, #myImg_6:hover, #myImg_7:hover, #myImg_8:hover, #myImg_9:hover,
+#myImg_10:hover, #myImg_11:hover, #myImg_12:hover, #myImg_13:hover, #myImg_14:hover, #myImg_15:hover, #myImg_16:hover, #myImg_17:hover, #myImg_18:hover,
+#myImg_19:hover, #myImg_20:hover, #myImg_21:hover, #myImg_22:hover, #myImg_23:hover, #myImg_24:hover, #myImg_25:hover, #myImg_26:hover, #myImg_27:hover,
+#myImg_28:hover, #myImg_29:hover, #myImg_30:hover, #myImg_31:hover, #myImg_32:hover, #myImg_33:hover
+{
+	opacity: 0.7;
+}
+
+#downpage{
+  margin-top: 130px;
+  background-color: rgba(158, 105, 78, 0.31);
+  position: relative;
+  margin-left: 85px;
+  margin-right: 85px;
+  top:0;
+  left:0;
+}
+
+#foottxt{
+  color:white;
+  font-family: "Arial";
+  font-style: italic;
+  font-size: 12px;
+  margin:0px auto;
+	padding:10px 20px;
+  top:0;
+  left:0;
+  z-index:2000;
+  width:100%;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption, #caption_1, #caption_2, #caption_3, #caption_4, #caption_5, #caption_6, #caption_7, #caption_8, #caption_9, #caption_10, #cpation_11, #caption_12,
+#caption_13, #caption_14, #caption_15, #caption_16,#caption_17, #caption_18, #caption_19, #caption_20, #caption_21, #caption_22, #caption_23, #caption_24,
+#caption_25, #caption_26, #caption_27, #caption_28, #caption_29, #caption_30, #caption_31, #caption_32, #caption_33
+ {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption, #caption_1, #caption_2, #caption_3, #caption_4, #caption_5, #caption_6, #caption_7, #caption_8, #caption_9, #caption_10, #caption_11,
+#caption_12, #caption_13, #caption_14, #caption_15, #caption_16, #caption_17, #caption_18, #caption_19, #caption_20,  #caption_21, #caption_22, #caption_23, #caption_24,
+#caption_25, #caption_26, #caption_27, #caption_28, #caption_29, #caption_30, #caption_31, #caption_32, #caption_33
+ {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 200px;
+    right: 100px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    z-index:1;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}

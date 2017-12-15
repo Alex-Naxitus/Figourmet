@@ -1,0 +1,162 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="mainstyles.css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-teal.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<title>FIGOURMET</title>
+    <link rel="icon" href="logo.png" />
+</head>
+<body>
+
+  <header class = "beginpage">
+    <nav>
+    <ul class="topnav" id="myTopnav">
+      <li><button class="button2" onclick="location.href = 'main.html';"><img src="logowhite.png" alt="figourmet" style="width:35px"></button></li>
+<li><button class="button" onclick="location.href = 'menu.html';">Our menu</button></li>
+<div class = "dropdown"><li><button class="button" onclick="location.href = 'recettes.html';">Recipes</button></li>
+<div class="dropdown-content">
+  <a href="recettes.html#Recette1">Mille-feuille</a>
+  <a href="recettes.html#Recette2">Gratin dauphinois</a>
+  <a href="recettes.html#Recette3">Carpaccio</a>
+</div>
+</div>
+<li><button class="button" onclick="location.href = 'offers.html';"> Offers</button></li>
+<li><button class="button" onclick="location.href = 'contact.html';">Contact</button></li>
+<div class = "dropdown"><li><button class="buttonrsp" onclick="location.href = 'contact.html';" ><i class="fa fa-bars" aria-hidden="true" id="smlscreenbtn"></i></button></li>
+  <div class="dropdown-content" style="right: 0px; left: auto;">
+    <a href="menu.html">Our menu</a>
+    <a href="recettes.html">Recipes</a>
+    <a href="offers.html">Offers</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+</ul></nav>
+  </header>
+  <header id = "test">
+
+  </header>
+
+<script>
+
+</script>
+
+  <section id = "myCarousel">
+    <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="souffle2.jpg" style="width:100%">
+    <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+    Soufflé au fromage
+  </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="magret.jpg" style="width:100%">
+    <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+    Magrets de canard à l'orange
+  </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="cheese.jpg" style="width:100%">
+    <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+    Assiette de fromages
+  </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="ileflottante.jpg" style="width:100%">
+    <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+    Ile flottante au caramel
+  </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="resto.jpg" style="width:100%">
+    <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+    A restaurant in the center of Paris
+  </div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+  </section>
+
+
+<script type="text/javascript">
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<section id = "coq">
+<img src="coqbrown.png" alt="" width=25% class="img"/>
+</section>
+
+<section class = "theresto">
+  <p class = "smltitle">Figourmet, since 1994</p>
+  <p id =  "history">Figourmet was created in 1994 by a couple of cookers that loved French plates and wanted to share their recipes with the others. Figourmet was at first a pretty small restaurant, located near Le Peletier in Paris. It changed its location in 2005 to become bigger and be able to welcome to more clients and tasters of the French famous plates. Its address is now in <span class="tooltip">Avenue George V
+  <span class="tooltiptext">See Contact page</span></span>. The chef has also changed since 2010, and lead his place to his daughter to take care of that restaurant that is now famous for its French specialities.
+  </p>
+
+</section>
+
+<section class = "theproducts">
+  <p class = "smltitle2">Reliable products</p>
+  <p id = "products">Our cooking has one single rule: homemade. That is why the products we select are fresh and come from the market or small local producers. Even our bread is homemade!</p>
+</section>
+
+
+<footer id = "downpage">
+    <p id="foottxt">© COPYRIGHT CORNEC-FORNER-LAUNET-TOURNADE , 2016 - <a href = "credits.html">CREDITS</a></p>
+</footer>
+</body>
+
+</html>

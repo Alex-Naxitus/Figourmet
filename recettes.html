@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+
+	<meta charset="utf-8" />
+		<link rel="stylesheet"
+	href="recettes.css"/>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-teal.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<title>My Recipe Book</title>
+	<link rel="icon" href="logo.png" />
+
+	</head>
+
+
+	<body>
+
+		<header class = "beginpage">
+	    <ul class="topnav" id="myTopnav">
+	      <li><button class="button2" onclick="location.href = 'main.html';"><img src="logowhite.png" alt="figourmet" style="width:35px"></button></li>
+	  <li><button class="button" onclick="location.href = 'menu.html';">Our menu</button></li>
+	  <div class = "dropdown"><li><button class="button" onclick="location.href = 'recettes.html';">Recipes</button></li>
+	  <div class="dropdown-content">
+	  <a href="recettes.html#Recette1">Mille-feuille</a>
+	  <a href="recettes.html#Recette2">Gratin dauphinois</a>
+	  <a href="recettes.html#Recette3">Carpaccio</a>
+	  </div>
+	  </div>
+	  <li><button class="button" onclick="location.href = 'offers.html';"> Offers</button></li>
+	  <li><button class="button" onclick="location.href = 'contact.html';">Contact</button></li>
+		<div class = "dropdown"><li><button class="buttonrsp" onclick="location.href = 'contact.html';" ><i class="fa fa-bars" aria-hidden="true" id="smlscreenbtn"></i></button></li>
+		  <div class="dropdown-content" style="right: 0px; left: auto;">
+		    <a href="menu.html">Our menu</a>
+		    <a href="recettes.html">Recipes</a>
+		    <a href="offers.html">Offers</a>
+		    <a href="contact.html">Contact</a>
+		  </div>
+		</div>
+	  </ul>
+	  </header>
+	  <header id = "test">
+
+	  </header>
+
+
+		<h1 class="titre"> My Recipe Book </h1>
+
+		<!--<p>
+		<ul id="menu"><!--
+		     --><!--<li><a href="#mille_feuille_framboise_chocolat">Mille-feuille framboise chocolat</a></li><!--
+			 --><!--<li><a href="#gratin_dauphinois">Gratin dauphinois</a></li><!--
+			 --><!--<li><a href="#carpaccio_de_st_jacques">Carpaccio de St Jacques</a></li>  </ul> </p>-->
+
+		<div id="Recette1">
+
+			<h2 id="mille_feuille_framboise_chocolat"> Mille-feuille chocolat framboise </h2>
+
+			<table id="table1">
+<thead>
+   <tr>
+
+	<td> <strong> Level </strong> </td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+     <td> <strong> Preparation </strong> </td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+     <td> <strong> Cooking </strong> </td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+     <td> <strong> Price </strong> </td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+	 <td> <strong> Quantity </strong> </td>
+
+   </tr>
+</thead>
+
+<tbody>
+   <tr>
+
+	 <th><img src="toque1.jpg" alt="toque"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+     <th><img src="reveil.jpg" alt="réveil"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+     <th><img  src="four1.jpg"  alt="four"/> </th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+	 <th><img  src="sous.jpg"  alt="sous"/> </th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+     <th><img src="gens.jpg" alt="gens"/></th>
+
+   </tr>
+</tbody>
+
+<thead>
+   <tr>
+
+	<td>Medium</td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+     <td>1h30</td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+     <td>None</td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+     <td>Cheap</td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+	 <td>6 persons</td>
+
+   </tr>
+</thead>
+
+
+
+</table>
+
+<table id="table2">
+<tr>
+
+  <td rowspan="6">
+ <img src="ingredients.jpg" alt="ingredients"/>
+  </td>
+  <td id="td1"><strong> Ingredients </strong> </td>
+  <td rowspan="6">
+  <img src="recipient.jpg" alt="recipient"/> </td>
+  <td id="td1"><strong> Equipment used </strong> </td>
+  </tr>
+
+ <tr>
+  <td id="td1">351g of dark chocolate </td>
+  <td id="td1">clingfilm (width: 30cm) </td>
+ </tr>
+ <tr>
+	<td id="td1">2 baskets of fresh raspberries</td>
+	<td id="td1">non-stick plate 40x30cm</td>
+	</tr>
+<tr>
+	<td id="td1">1 branch of fresh mint</td>
+	<td id="td1"> spatula type maryse (25cm)</td>
+	</tr>
+<tr>
+	<td id="td1">3dl of crème fraiche with a fat level of 30%</td>
+	<td id="td1">curved spatula 15cm </td>
+	</tr>
+<tr>
+	<td id="td1">70g of icing sugar</td>
+	<td id="td1">piping bag (40cm) </td>
+	</tr>
+</table>
+
+		<div id="photo_mf">
+
+		<p> <img src="mille_feuille.jpg" alt="mf"/> </p>
+
+
+		<p id="etapes"> <ol> <li> To realise this recipe begin by preparing all the ingredients. </li>
+							 <li> Wrap of clingfilm the non-stick plate 40x30cm. </li>
+							 <li> In a bowl, put the chocolate. Melt it a few minutes in the micro-wave at a moderate power. </li>
+							 <li> Mix withe the spatula type maryse in order to get melted chocolate without lump. </li>
+							 <li> Pour the melted chocolate on the non-stick plate and spread it with the curved spatula. </li>
+							 <li> Put the non-stick plate in the fridge. </li></ol> </div>
+		<div id="choco">
+		<p class="flotte">  <img src="choco.jpg" alt="chocolat"/> </p>
+							 <li> At the same time, whisk the crème fraîche as whipped cream. </li>
+							 <li> At the end of the whisking, add 50g of icing glace.</li>
+							 <li> Chisel subtly the branches' leaves of mint. </li>
+							 <li> Add this mint to the chantilly. </li>
+							 <li> Mix it. </li>
+							 <li> Fill the piping bag and put it in the fridge. </li>
+							 <li> Get the chocolate patch out of the fridge when it's hard. </li>
+							 <li> Trim the broders of the patch in order to get distincts borders. </li>
+							 <li> Cut the chocolate in square. Predict 3 squares by mille-feuille. </li>
+							 <li> Place the first square in the middle of a plate. </li>
+							 <li> With the piping bag make some roses of chantilly with the mint. </li>
+							 <li> Pick some fresh raspberries on it. </li>
+							 <li> Cover with an other square of chocolate. </li>
+							 <li> Make some roses of chantilly again. </li>
+							 <li> Then, pick some fresh raspberries. </li>
+							 <li> Dust the last square of chocolate. </li>
+							 <li> Put it on the rasberries. </li>
+							 <li> Decorate the top with a rose of chantilly and a leaf of fresh mint.</li>
+							 </ol> </p>
+
+
+
+
+		</div>
+
+
+
+
+
+		</div>
+		<br/>
+		<br/>
+		<div id="sep"> <p> <img src="sep_3.png" alt="séparation"/> </p> </div>
+		<br/>
+		<br/>
+<div id="Recette2">
+
+			<h2 id="gratin_dauphinois"> Gratin Dauphinois </h2>
+
+			<table id="table1">
+<thead>
+   <tr>
+
+	<td> <strong> Level </strong> </td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+     <td> <strong> Preparation </strong> </td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+     <td> <strong> Cooking </strong> </td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+     <td> <strong> Price </strong> </td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+	 <td> <strong> Quantity </strong> </td>
+
+   </tr>
+</thead>
+
+<tbody>
+   <tr>
+
+	 <th><img src="toque1.jpg" alt="toque"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+     <th><img src="reveil.jpg" alt="réveil"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+     <th><img  src="four1.jpg"  alt="four"/> </th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+	 <th><img  src="sous.jpg"  alt="sous"/> </th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+     <th><img src="gens.jpg" alt="gens"/></th>
+
+   </tr>
+</tbody>
+
+<thead>
+   <tr>
+
+	<td>Easy</td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+     <td>1h</td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+     <td>15min</td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+     <td>Cheap</td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+	 <td>4 persons</td>
+
+   </tr>
+</thead>
+
+
+
+</table>
+
+<table id="table2">
+<tr>
+
+  <td rowspan="9">
+ <img src="ingredients.jpg" alt="ingredients"/>
+  </td>
+  <td id="td1"><strong> Ingredients </strong> </td>
+  <td rowspan="9">
+  <img src="recipient.jpg" alt="recipient"/> </td>
+  <td id="td1"><strong> Equipment used </strong> </td>
+  </tr>
+
+ <tr>
+  <td id="td1">800g of potatoes </td>
+  <td id="td1">Japanese mandolin 6,5cm </td>
+ </tr>
+ <tr>
+	<td id="td1">30cl of whole milk</td>
+	<td id="td1">Saucepan 28cm</td>
+	</tr>
+<tr>
+	<td id="td1">50cl of crème fraîche</td>
+	<td id="td1"> Garlic cut</td>
+	</tr>
+<tr>
+	<td id="td1">a big knob of butter</td>
+	<td id="td1">Spatula </td>
+	</tr>
+<tr>
+	<td id="td1">2 garlic cloves</td>
+	<td id="td1">circle hollow platter in black cast hiron</td>
+	</tr>
+<tr>
+	<td id="td1">Nutmeg</td>
+	<td id="td1"></td>
+	</tr>
+<tr>
+	<td id="td1">Salt</td>
+	<td id="td1"> </td>
+	</tr>
+<tr>
+	<td id="td1">Pepper</td>
+	<td> </td>
+	</tr>
+</table>
+
+		<div id="photo_mf1">
+
+		<p> <img src="gratin_dauphinois.jpg" alt="mf"/> </p>
+
+
+		<p id="etapes1"> <ol> <li>To realise this recipe begin by preparing all the ingredients and preheat the oven. </li>
+							 <li> Wash, peel and slice thinly the potatoes with the Japanese mandolin. </li>
+							 <li> Place it in the saucepan with milk, crème fraîche, garlic, salt, pepper, butter and nutmeg.</li>
+							 <li> Bring it to the boil. </li>
+							 <li> Decrease the burner and pursue the firing during 8 minutes. Stir in it with a spatula. </li>
+							 <li> Put the potatoes in the platter. Flatten the top and let it cool down. </li>
+							 <li> At the same time, add 20cl of crème fraîche.</li>
+							 <li> Put it in the oven at 180°C and let it bake during around 15 minutes.  </li>
+							 <li> Then serve it in the platter. </li>
+
+
+
+
+
+		</div>
+		</div>
+		<br/>
+		<br/>
+		<div id="sep"> <p> <img src="sep_3.png" alt="séparation"/> </p> </div>
+		<br/>
+		<br/>
+
+<div id="Recette3">
+
+			<h2 id="carpaccio_de_st_jacques"> Carpaccio de St-Jacques </h2>
+
+			<table id="table1">
+<thead>
+   <tr>
+
+	<td> <strong> Level </strong> </td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+     <td> <strong> Preparation </strong> </td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+     <td> <strong> Cooking </strong> </td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+     <td> <strong> Price </strong> </td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+	 <td> <strong> Quantity </strong> </td>
+
+   </tr>
+</thead>
+
+<tbody>
+   <tr>
+
+	 <th><img src="toque1.jpg" alt="toque"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+     <th><img src="reveil.jpg" alt="réveil"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+     <th><img  src="four1.jpg"  alt="four"/> </th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+	 <th><img  src="sous.jpg"  alt="sous"/> </th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+	 <th><img src="fond.jpg" alt="fond"/></th>
+     <th><img src="gens.jpg" alt="gens"/></th>
+
+   </tr>
+</tbody>
+
+<thead>
+   <tr>
+
+	<td>Easy</td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+     <td>20min</td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+     <td>None</td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+     <td>Quite expensive</td>
+	 <td></td>
+	 <td></td>
+	 <td></td>
+	 <td>4 persons</td>
+
+   </tr>
+</thead>
+
+
+
+</table>
+
+<table id="table2">
+<tr>
+
+  <td rowspan="9">
+ <img src="ingredients.jpg" alt="ingredients"/>
+  </td>
+  <td id="td1"><strong> Ingredients </strong> </td>
+  <td rowspan="9">
+  <img src="recipient.jpg" alt="recipient"/> </td>
+  <td id="td1"><strong> Equipment used </strong> </td>
+  </tr>
+
+ <tr>
+  <td id="td1">12 knobs of Saint Jacques </td>
+  <td id="td1">A blender </td>
+ </tr>
+ <tr>
+	<td id="td1">orange juice</td>
+	<td id="td1">A big bowl</td>
+	</tr>
+<tr>
+	<td id="td1">lemon juice</td>
+	<td id="td1"> A strainer</td>
+	</tr>
+<tr>
+	<td id="td1">2 spoons of nut oil</td>
+	<td id="td1">Spatula </td>
+	</tr>
+<tr>
+	<td id="td1">4 spoons of Colza oil</td>
+	<td id="td1">circle hollow platter in black cast hiron</td>
+	</tr>
+<tr>
+	<td id="td1">mix of bays</td>
+	<td id="td1"></td>
+	</tr>
+<tr>
+	<td id="td1">1/2 bunch of chives</td>
+	<td id="td1"> </td>
+	</tr>
+<tr>
+	<td id="td1">salt, pepper</td>
+	<td> </td>
+	</tr>
+</table>
+
+		<div id="photo_mf1">
+
+		<p> <img src="food1.jpg" alt="mf"/> </p>
+
+
+		<p id="etapes1"> <ol> <li> To realise this recipe begin by preparing a marinade. </li>
+							 <li> In a blender, grind a spoon of bays. </li>
+							 <li> In the big bowl, mix the juices, ground bays and oils.</li>
+							 <li> Finish the marinade by slating and peppering. Emulsify the mixing (put 30min in the fridge).</li>
+							 <li> Clean the scallops. Cut them in slices and place them in individual plates. </li>
+							 <li> Slice thinly the scallops, pour the marinade and scatter with some chives. It's ready !</li>
+
+
+
+
+
+
+		</div>
+		</div>
+
+<footer id = "downpage">
+	<p id="foottxt">© COPYRIGHT CORNEC-FORNER-LAUNET-TOURNADE , 2016 - <a href = "credits.html">CREDITS</a></p>
+</footer>
+
+
+	</body>
+
+	</html>
